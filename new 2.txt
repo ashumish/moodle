@@ -1,0 +1,23 @@
+  const firstName = 'Ashutosh';
+  const lastName = 'Mishra';
+  const age = 25;
+  const Job = 'Software developer';
+  const getFullName = (firstName,lastName) => ` ${firstName} ${lastName}`;
+
+    const object = {
+      name: 'Toto',
+      age: 30
+    }  
+    const inputDetails =  <input placeholder= {"Enter Data"} autoComplete/>;
+    const submitButton =  <input type="submit" value="submit"/>;
+  
+  return (
+    <div className="App">
+      <h3>Full Name:{getFullName(firstName,lastName)}</h3>
+      <p>Age: {object.age}</p>
+      <p>Job: {Job}</p>
+      {inputDetails}
+      {submitButton}
+     
+    </div>
+  );

@@ -1,0 +1,30 @@
+import './App.css';
+import React from 'react';
+
+function App() {
+  const blogObj = {
+    title: 'Blog Title 1',
+    discription: 'This is BlogCard, Which is use here only for learning purpose.'
+  }
+  
+return(
+  <div className = "App">
+    <div className='blogCard'>
+      <h2>{blogObj.title}</h2>
+      <p>{blogObj.discription}</p>
+    </div>
+    
+    <div className='blogCard'>
+      <h2>{blogObj.title}</h2>
+      <p>{blogObj.discription}</p>
+    </div>
+    <div className='blogCard'>
+      <h2>{blogObj.title}</h2>
+      <p>{blogObj.discription}</p>
+    </div>
+    
+  </div>
+);
+}
+
+export default App;

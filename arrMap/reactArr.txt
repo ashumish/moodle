@@ -1,0 +1,33 @@
+import './App.css';
+import React from 'react';
+
+function App() {
+  const blogArr = [
+    {id:1,
+    title: 'Blog Title 1',
+    discription: 'This is BlogCard, Which is use here only for learning purpose.'
+    },
+    {id:2,
+    title: 'Blog Title 2',
+    discription: 'This is BlogCard, Which is use here only for learning purpose.'
+    },
+    {id:3,
+    title: 'Blog Title 3',
+    discription: 'This is BlogCard, Which is use here only for learning purpose.'
+    },
+]
+const blogCard = blogArr.map((item)=>{
+  return ( <div className='blogElement'key={item.id}>
+      <h2>{item.title}</h2>
+      <p>{item.discription}</p>
+    </div>
+         ) 
+})
+return(
+  <div className = "App">
+    {blogCard}
+  </div>
+);
+}
+
+export default App;
