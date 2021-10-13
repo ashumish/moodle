@@ -1,5 +1,5 @@
   const firstName = 'Ashutosh';
-  const lastName = 'Mishra';
+  const lastName = 'singh';
   const age = 25;
   const Job = 'Software developer';
   const getFullName = (firstName,lastName) => ` ${firstName} ${lastName}`;
